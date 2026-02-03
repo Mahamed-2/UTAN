@@ -70,16 +70,17 @@ body {
 
 /* Header & Nav */
 .header {
-    height: 80px;
+    height: 90px;
     display: flex;
     align-items: center;
     position: sticky;
     top: 0;
     background: var(--bg);
-    opacity: 0.95;
-    backdrop-filter: blur(10px);
-    z-index: 100;
+    opacity: 0.98;
+    backdrop-filter: blur(12px);
+    z-index: 1000;
     border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s ease;
 }
 
 .nav-container {
@@ -90,25 +91,31 @@ body {
 }
 
 .logo {
-    height: 48px;
+    height: 52px;
+    /* Slightly larger logo */
 }
 
 .nav {
     display: flex;
-    gap: 32px;
+    gap: 48px;
+    /* Increased from 32px */
     align-items: center;
 }
 
 a {
     color: inherit;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .nav a {
     color: var(--primary);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    /* Added for premium clarity */
+    text-transform: uppercase;
+    /* Optional: makes it look more organized */
 }
 
 .nav a:hover {
@@ -218,16 +225,18 @@ a {
 
 h1 {
     font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 24px;
+    line-height: 1.05;
+    margin-bottom: 32px;
     font-weight: 700;
-    letter-spacing: -2px;
+    letter-spacing: -2.5px;
 }
 
 .paragraph-large {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     color: var(--text-muted);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    line-height: 1.7;
+    /* Increased for better legibility */
 }
 
 .hero-actions {
