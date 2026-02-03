@@ -88,9 +88,53 @@ function initAnimations() {
     })
 }
 
+// Waitlist Form Handling
+function initWaitlist() {
+    const form = document.getElementById('waitlist-form');
+    const successMsg = document.getElementById('waitlist-success');
+    const privacyText = document.querySelector('.cta-privacy');
+
+    if (!form) return;
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const submitBtn = form.querySelector('button');
+        const originalBtnText = submitBtn.textContent;
+        const email = form.querySelector('input[name="email"]').value;
+
+        // Change button to loading state
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Joining...';
+
+        try {
+            // Replace with your Google Apps Script URL
+            const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbygSGOp2JFHxoRvC5xhpLDwVKyP7E2LrsRQobQbruM0GoFxDGeviLR5B6Nw-MfqId8v/exec';
+
+            await fetch(SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors', // Apps Script requires no-cors for Simple Triggers
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, timestamp: new Date().toISOString() })
+            });
+
+            // Show success message
+            form.classList.add('hidden');
+            if (privacyText) privacyText.classList.add('hidden');
+            successMsg.classList.remove('hidden');
+
+        } catch (error) {
+            console.error('Waitlist Error:', error);
+            alert('Something went wrong. Please try again.');
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
+        }
+    });
+}
+
 // Initial Call
 document.addEventListener('DOMContentLoaded', () => {
     updateContent()
     init3DSlogan()
     initAnimations()
+    initWaitlist()
 })
