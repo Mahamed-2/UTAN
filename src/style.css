@@ -108,14 +108,20 @@ a {
     transition: all 0.3s ease;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* Space between links */
+}
+
 .nav a {
     color: var(--primary);
-    font-weight: 500;
-    font-size: 0.9rem;
-    letter-spacing: 0.02em;
-    /* Added for premium clarity */
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    /* Increased for premium look */
     text-transform: uppercase;
-    /* Optional: makes it look more organized */
 }
 
 .nav a:hover {
