@@ -14,12 +14,28 @@ Follow these steps to connect your UTAN waiting list to a Google Sheet.
 ```javascript
 function doPost(e) {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  var data = JSON.parse(e.postData.contents);
+  var data;
   
-  sheet.appendRow([data.email, data.timestamp]);
+  try {
+    // Robust parsing: check for standard form params OR JSON
+    if (e.postData && e.postData.contents) {
+      data = JSON.parse(e.postData.contents);
+    } else {
+      data = e.parameter;
+    }
+  } catch (err) {
+    data = e.parameter;
+  }
   
-  return ContentService.createTextOutput("Success")
-    .setMimeType(ContentService.MimeType.TEXT);
+  var email = data.email || e.parameter.email;
+  var timestamp = data.timestamp || e.parameter.timestamp || new Date().toISOString();
+  
+  if (email) {
+    sheet.appendRow([email, timestamp]);
+    return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
+  } else {
+    return ContentService.createTextOutput("Error: No email").setMimeType(ContentService.MimeType.TEXT);
+  }
 }
 ```
 

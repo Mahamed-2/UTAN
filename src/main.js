@@ -27,27 +27,77 @@ function updateContent() {
 }
 
 // Language Toggle
-const langBtn = document.getElementById('lang-toggle')
-langBtn.addEventListener('click', () => {
-    currentLang = currentLang === 'en' ? 'sv' : 'en'
-    langBtn.textContent = currentLang === 'en' ? 'SV' : 'EN'
-    updateContent()
-    init3DSlogan() // Re-init to handle text change if needed
-})
+function setupLanguageToggle(id) {
+    const btn = document.getElementById(id)
+    if (!btn) return
+    btn.addEventListener('click', () => {
+        currentLang = currentLang === 'en' ? 'sv' : 'en'
+        updateLanguageButtons()
+        updateContent()
+        init3DSlogan()
+    })
+}
+
+function updateLanguageButtons() {
+    const btns = ['lang-toggle', 'lang-toggle-mobile']
+    btns.forEach(id => {
+        const btn = document.getElementById(id)
+        if (btn) btn.textContent = currentLang === 'en' ? 'SV' : 'EN'
+    })
+}
+
+setupLanguageToggle('lang-toggle')
+setupLanguageToggle('lang-toggle-mobile')
 
 // Dark Mode Toggle
-const themeBtn = document.getElementById('theme-toggle')
-const currentTheme = localStorage.getItem('theme') || 'light'
-document.documentElement.setAttribute('data-theme', currentTheme)
-themeBtn.textContent = currentTheme === 'dark' ? '☀️' : '🌙'
+function setupThemeToggle(id) {
+    const btn = document.getElementById(id)
+    if (!btn) return
+    btn.addEventListener('click', () => {
+        const theme = document.documentElement.getAttribute('data-theme')
+        const newTheme = theme === 'dark' ? 'light' : 'dark'
+        updateTheme(newTheme)
+    })
+}
 
-themeBtn.addEventListener('click', () => {
-    const theme = document.documentElement.getAttribute('data-theme')
-    const newTheme = theme === 'dark' ? 'light' : 'dark'
+function updateTheme(newTheme) {
     document.documentElement.setAttribute('data-theme', newTheme)
     localStorage.setItem('theme', newTheme)
-    themeBtn.textContent = newTheme === 'dark' ? '☀️' : '🌙'
-})
+    const btns = ['theme-toggle', 'theme-toggle-mobile']
+    btns.forEach(id => {
+        const btn = document.getElementById(id)
+        if (btn) btn.textContent = newTheme === 'dark' ? '☀️' : '🌙'
+    })
+}
+
+setupThemeToggle('theme-toggle')
+setupThemeToggle('theme-toggle-mobile')
+
+// Initial theme/lang sync
+const savedTheme = localStorage.getItem('theme') || 'light'
+updateTheme(savedTheme)
+updateLanguageButtons()
+
+// Mobile Menu Toggle
+function initMobileMenu() {
+    const menuToggle = document.getElementById('menu-toggle')
+    const navLinks = document.getElementById('nav-links')
+    const links = navLinks.querySelectorAll('a')
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active')
+        menuToggle.classList.toggle('active')
+        document.body.classList.toggle('no-scroll')
+    })
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active')
+            menuToggle.classList.remove('active')
+            document.body.classList.remove('no-scroll')
+        })
+    })
+}
 
 // 3D Slogan Animation using JS (Subtle Tilt)
 function init3DSlogan() {
@@ -107,14 +157,20 @@ function initWaitlist() {
         submitBtn.textContent = 'Joining...';
 
         try {
-            // Replace with your Google Apps Script URL
+            // Updated to use URLSearchParams for better compatibility with no-cors Apps Script
             const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbygSGOp2JFHxoRvC5xhpLDwVKyP7E2LrsRQobQbruM0GoFxDGeviLR5B6Nw-MfqId8v/exec';
+
+            const formData = new URLSearchParams();
+            formData.append('email', email);
+            formData.append('timestamp', new Date().toISOString());
 
             await fetch(SCRIPT_URL, {
                 method: 'POST',
-                mode: 'no-cors', // Apps Script requires no-cors for Simple Triggers
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, timestamp: new Date().toISOString() })
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: formData.toString()
             });
 
             // Show success message
@@ -137,4 +193,5 @@ document.addEventListener('DOMContentLoaded', () => {
     init3DSlogan()
     initAnimations()
     initWaitlist()
+    initMobileMenu()
 })
