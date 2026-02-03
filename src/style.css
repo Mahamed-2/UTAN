@@ -111,17 +111,20 @@ a {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 40px;
-    /* Space between links */
+    gap: 60px;
+    /* Even more space for clarity */
 }
 
 .nav a {
     color: var(--primary);
     font-weight: 600;
-    font-size: 0.85rem;
-    letter-spacing: 0.05em;
-    /* Increased for premium look */
+    font-size: 0.8rem;
+    /* Slightly smaller for more elegance */
+    letter-spacing: 0.1em;
+    /* Wide spacing for premium feel */
     text-transform: uppercase;
+    white-space: nowrap;
+    /* Prevent clumping */
 }
 
 .nav a:hover {
