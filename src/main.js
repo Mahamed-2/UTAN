@@ -158,7 +158,7 @@ function initWaitlist() {
 
         try {
             // Updated to use URLSearchParams for better compatibility with no-cors Apps Script
-            const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbygSGOp2JFHxoRvC5xhpLDwVKyP7E2LrsRQobQbruM0GoFxDGeviLR5B6Nw-MfqId8v/exec';
+            const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxijopT7wHSVYy4krIURX599ZqRQPTqDBiz5VTwKfCJSC8g5Xj9EzaLrr8qyrLwJ_Oy/exec';
 
             const formData = new URLSearchParams();
             formData.append('email', email);
