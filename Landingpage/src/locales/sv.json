@@ -1,0 +1,124 @@
+{
+    "nav": {
+        "how_it_works": "Hur det fungerar",
+        "for_providers": "För leverantörer",
+        "investors": "Investerare",
+        "get_early_access": "Få tidig åtkomst"
+    },
+    "hero": {
+        "h1": "Förena vision med verklighet",
+        "subheading": "UTAN berättar inte bara vad du ska göra — utan när det faktiskt är vettigt för ditt liv.",
+        "primary_cta": "Få tidig åtkomst",
+        "secondary_cta": "För aktivitetsleverantörer →",
+        "supporting": "Beslutsmotorn för meningsfulla upplevelser.",
+        "slogan": "One-Tap Wonder"
+    },
+    "uniqueness": {
+        "heading": "Från upptäckt till beslut",
+        "subheading": "De flesta plattformar stannar vid 'vad'. UTAN svarar på 'när, hur och varför nu'.",
+        "pillar1_t": "Kontextmedveten upptäckt",
+        "pillar1_d": "Matchar aktiviteter med ditt schema, väder och trafik i realtid.",
+        "pillar2_t": "Tidsoptimering",
+        "pillar2_d": "Hittar det perfekta fönstret för dina energinivåer och yttre faktorer.",
+        "pillar3_t": "Personlig matchning",
+        "pillar3_d": "Anpassar sig till din utrustning, kompetensnivå och unika livsstil.",
+        "pillar4_t": "Friktionsfri exekvering",
+        "pillar4_d": "Checklistor och tydlighet kring ansträngning vs belöning."
+    },
+    "trust": {
+        "local": "Lokala aktiviteter i hela Sverige",
+        "verified": "Verifierade upplevelseleverantörer",
+        "pricing": "Tydlig prissättning & tillgänglighet",
+        "designed": "Designat för vardagsplanering"
+    },
+    "investor": {
+        "heading": "Investerarrelationer",
+        "mission": "Uppdrag: Att bli Sveriges ledande intelligenta plattform för upptäckt och beslutsintelligens.",
+        "vision": "Vision: Ett Sverige där meningsfulla upplevelser är enkla att hitta och inkluderande för alla.",
+        "summary": "UTAN är en beslutsmotor som förvandlar aktiviteter till smarta, kontextenliga beslut.",
+        "metrics_h": "Marknadsmöjlighet (SEK)",
+        "metrics": {
+            "tam": "TAM: 21.4md",
+            "sam": "SAM: 14.3md",
+            "som": "SOM: 214M"
+        },
+        "projections": {
+            "h": "Tillväxtprognos (GMV)",
+            "y1": "År 1: 12M",
+            "y2": "År 2: 45M",
+            "y3": "År 3: 100M",
+            "y5": "År 5: 300M"
+        }
+    },
+    "value": {
+        "title1": "Personlig upptäckt",
+        "text1": "Hitta aktiviteter baserat på dina intressen, plats, tid och verkliga begränsningar — inte oändliga listor.",
+        "title2": "Enkel bokning",
+        "text2": "Se tillgänglighet, jämför alternativ och boka direkt — utan mejl, samtal eller förvirring.",
+        "title3": "Lokalt och relevant",
+        "text3": "Upplevelser från riktiga lokala leverantörer — kulturella, pedagogiska, utomhus och sociala."
+    },
+    "audience": {
+        "families": {
+            "title": "Sveriges familjer",
+            "text": "Planera aktiviteter som faktiskt fungerar för olika åldrar och energinivåer."
+        },
+        "locals": {
+            "title": "Lokalbor & nyinflyttade",
+            "text": "Utforska din stad bortom det uppenbara — säsong för säsong."
+        },
+        "visitors": {
+            "title": "Besökare",
+            "text": "Upplev Sverige genom pålitliga lokala upplevelser."
+        },
+        "teams": {
+            "title": "Team & grupper",
+            "text": "Enkel planering för teamaktiviteter, workshops och gruppbokningar."
+        }
+    },
+    "how": {
+        "step1": {
+            "title": "1. Berätta vad som spelar roll",
+            "text": "Intressen, tillgänglighet, vem du planerar för."
+        },
+        "step2": {
+            "title": "2. Få relevanta förslag",
+            "text": "UTAN anpassar rekommendationer efter ditt sammanhang."
+        },
+        "step3": {
+            "title": "3. Boka på ett ställe",
+            "text": "Tydliga detaljer, tillgänglighet i realtid, säker bokning."
+        },
+        "step4": {
+            "title": "4. Njut av upplevelsen",
+            "text": "Påminnelser, vägbeskrivningar och allt du behöver — redo."
+        }
+    },
+    "product": {
+        "headline": "Designat för det verkliga livet",
+        "bullet1": "Personligt aktivitetsflöde",
+        "bullet2": "Väderanpassade förslag",
+        "bullet3": "Grupp- & familjebokning",
+        "bullet4": "Sparade planer & favoriter",
+        "bullet5": "Stöd för flera språk",
+        "bullet6": "Säkra betalningar"
+    },
+    "differentiation": {
+        "headline": "UTAN är inte ännu en marknadsplats för aktiviteter.",
+        "text": "Det är ett system designat för att hjälpa människor att använda sin fritid bättre, samtidigt som det hjälper lokala leverantörer att nå rätt målgrupp — vid rätt tillfälle.",
+        "bullet1": "Kontextmedveten, inte sökordsbaserad",
+        "bullet2": "Byggt specifikt för Sverige",
+        "bullet3": "Stödjer både människor och leverantörer",
+        "bullet4": "Designat för vardagsbruk — inte bara speciella tillfällen"
+    },
+    "cta": {
+        "headline": "Bli en av de första att använda UTAN",
+        "text": "Gå med i väntelistan och hjälp till att forma ett bättre sätt att upptäcka upplevelser i Sverige.",
+        "button": "Gå med i väntelistan",
+        "privacy": "Ingen reklam. Vi respekterar din integritet."
+    },
+    "footer": {
+        "copyright": "© 2026 UTAN AB. Alla rättigheter förbehållna.",
+        "contact": "info@utan.se"
+    }
+}

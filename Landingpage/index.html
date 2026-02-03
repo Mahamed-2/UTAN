@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/utan_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTAN — Aligning Intention with Reality</title>
+    <meta name="description"
+        content="UTAN is a Decision Intelligence engine that tells you not just what to do — but when it actually makes sense for your life." />
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container-large nav-container">
+                <div class="logo-wrapper">
+                    <img src="/utan_logo.png" alt="UTAN Logo" class="logo" />
+                </div>
+                <nav class="nav">
+                    <a href="#how" data-i18n="nav.how_it_works">How it works</a>
+                    <a href="#providers" data-i18n="nav.for_providers">For providers</a>
+                    <a href="#investors" data-i18n="nav.investors">Investors</a>
+                    <button class="theme-toggle" id="theme-toggle">🌙</button>
+                    <button class="btn btn-secondary language-toggle" id="lang-toggle">SV</button>
+                    <a href="#cta" class="btn btn-primary" data-i18n="nav.get_early_access">Get early access</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="section-hero">
+                <div class="container-large hero-grid">
+                    <div class="hero-text">
+                        <div id="slogan-3d" class="slogan-3d" data-i18n="hero.slogan">One-Tap Wonder</div>
+                        <h1 data-i18n="hero.h1">Aligning Intention with Reality</h1>
+                        <p class="paragraph-large" data-i18n="hero.subheading">UTAN tells you not just what to do — but
+                            when it actually makes sense for your life.</p>
+                        <div class="hero-actions">
+                            <a href="#cta" class="btn btn-primary" data-i18n="hero.primary_cta">Get early access</a>
+                            <a href="#providers" class="text-link" data-i18n="hero.secondary_cta">For activity providers
+                                →</a>
+                        </div>
+                        <p class="small-text supporting-text" data-i18n="hero.supporting">The Decision Engine for
+                            Meaninful Experiences.</p>
+                    </div>
+                    <div class="hero-visual">
+                        <img src="/hero_lifestyle.png" alt="Lifestyle in Sweden" class="hero-image" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trust Section -->
+            <section class="section-trust">
+                <div class="container-large trust-grid">
+                    <div class="trust-item" data-i18n="trust.local">Local activities across Sweden</div>
+                    <div class="trust-item" data-i18n="trust.verified">Verified experience providers</div>
+                    <div class="trust-item" data-i18n="trust.pricing">Clear pricing & availability</div>
+                    <div class="trust-item" data-i18n="trust.designed">Designed for everyday planning</div>
+                </div>
+            </section>
+
+            <!-- Uniqueness Section -->
+            <section id="uniqueness" class="section-uniqueness">
+                <div class="container-large">
+                    <div class="centered">
+                        <h2 data-i18n="uniqueness.heading">From Discovery to Decision</h2>
+                        <p class="paragraph-large" data-i18n="uniqueness.subheading" style="margin-top: 16px;"></p>
+                    </div>
+                    <div class="uniqueness-grid">
+                        <div class="uniqueness-card">
+                            <h4 data-i18n="uniqueness.pillar1_t">Context-Aware</h4>
+                            <p data-i18n="uniqueness.pillar1_d"></p>
+                        </div>
+                        <div class="uniqueness-card">
+                            <h4 data-i18n="uniqueness.pillar2_t">Time Optimization</h4>
+                            <p data-i18n="uniqueness.pillar2_d"></p>
+                        </div>
+                        <div class="uniqueness-card">
+                            <h4 data-i18n="uniqueness.pillar3_t">Personal Fit</h4>
+                            <p data-i18n="uniqueness.pillar3_d"></p>
+                        </div>
+                        <div class="uniqueness-card">
+                            <h4 data-i18n="uniqueness.pillar4_t">Friction Removal</h4>
+                            <p data-i18n="uniqueness.pillar4_d"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity Gallery Section -->
+            <section class="section-activities">
+                <div class="container-large">
+                    <h2 class="centered">Experiences for every moment</h2>
+                    <div class="activity-grid">
+                        <div class="activity-item"><img src="/camping.png" alt="Camping" /></div>
+                        <div class="activity-item"><img src="/running.png" alt="Running" /></div>
+                        <div class="activity-item"><img src="/biking.png" alt="Biking" /></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Investor Section -->
+            <section id="investors" class="section-investor">
+                <div class="container-large">
+                    <h2 class="centered" style="margin-bottom: 60px;" data-i18n="investor.heading">Investor Relations
+                    </h2>
+                    <div class="investor-grid">
+                        <div class="investor-info">
+                            <h3 data-i18n="investor.mission">Mission</h3>
+                            <p data-i18n="investor.summary" style="margin-bottom: 40px; font-size: 1.1rem;"></p>
+
+                            <h4 data-i18n="investor.metrics_h" style="margin-bottom: 24px;">Market Opportunity (SEK)
+                            </h4>
+                            <div class="market-diagram">
+                                <div class="market-bar bar-tam" data-i18n="investor.metrics.tam">TAM: 21.4B</div>
+                                <div class="market-bar bar-sam" data-i18n="investor.metrics.sam">SAM: 14.3B</div>
+                                <div class="market-bar bar-som" data-i18n="investor.metrics.som">SOM: 214M</div>
+                            </div>
+                        </div>
+                        <div class="investor-projections">
+                            <h3 data-i18n="investor.projections.h">Growth Projection (GMV)</h3>
+                            <div class="projection-chart">
+                                <div class="chart-bar" style="height: 10%;"><span class="chart-label"
+                                        data-i18n="investor.projections.y1">Y1: 12M</span></div>
+                                <div class="chart-bar" style="height: 35%;"><span class="chart-label"
+                                        data-i18n="investor.projections.y2">Y2: 45M</span></div>
+                                <div class="chart-bar" style="height: 65%;"><span class="chart-label"
+                                        data-i18n="investor.projections.y3">Y3: 100M</span></div>
+                                <div class="chart-bar" style="height: 100%;"><span class="chart-label"
+                                        data-i18n="investor.projections.y5">Y5: 300M</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Provider Section (B2B) -->
+            <section id="providers" class="section-providers">
+                <div class="container-large provider-grid">
+                    <div class="provider-content">
+                        <h2 data-i18n="nav.for_providers">For activity providers</h2>
+                        <p style="font-size: 1.2rem; margin-top: 16px;">UTAN transforms how you reach local customers.
+                            Secure more bookings with zero administrative overhead.</p>
+                        <ul class="provider-bullets">
+                            <li>Instant deal acceptance & settlement</li>
+                            <li>Real-time demand forecasting analytics</li>
+                            <li>Multi-channel automated marketing</li>
+                            <li>Direct integration with local tourism hubs</li>
+                        </ul>
+                        <a href="#cta" class="btn btn-primary" style="margin-top: 32px;">Join as a provider →</a>
+                    </div>
+                    <div class="provider-visual">
+                        <img src="/b2b_deal.png" alt="Deal Accepted" class="deal-visual" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Waitlist CTA Section -->
+            <!-- Waitlist CTA Section -->
+            <section id="cta" class="section-cta">
+                <div class="container-large">
+                    <div class="cta-card">
+                        <h2 data-i18n="cta.headline">Be among the first to use UTAN</h2>
+                        <p class="paragraph-large" data-i18n="cta.text">Join the waitlist and help shape a better way to
+                            discover experiences in Sweden.</p>
+                        <form class="waitlist-form">
+                            <input type="email" placeholder="Email address" required />
+                            <button type="submit" class="btn btn-primary" data-i18n="cta.button">Join waitlist</button>
+                        </form>
+                        <p class="small-text" data-i18n="cta.privacy">No spam. We respect your privacy.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container-large">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h2 class="logo-text">UTAN</h2>
+                        <p>Making it easier to discover meaningful experiences in Sweden.</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#how" data-i18n="nav.how_it_works">How it works</a>
+                        <a href="#providers" data-i18n="nav.for_providers">For providers</a>
+                        <a href="#investors" data-i18n="nav.investors">Investors</a>
+                    </div>
+                    <div class="footer-contact">
+                        <p style="font-weight: 700; color: var(--primary);" data-i18n="footer.contact">info@utan.se</p>
+                        <p>Sweden</p>
+                    </div>
+                </div>
+                <div class="copyright-bar">
+                    <p data-i18n="footer.copyright">© 2026 UTAN AB. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

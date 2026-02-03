@@ -1,0 +1,124 @@
+{
+    "nav": {
+        "how_it_works": "How it works",
+        "for_providers": "For providers",
+        "investors": "Investors",
+        "get_early_access": "Get early access"
+    },
+    "hero": {
+        "h1": "Aligning Intention with Reality",
+        "subheading": "UTAN tells you not just what to do — but when it actually makes sense for your life.",
+        "primary_cta": "Get early access",
+        "secondary_cta": "For activity providers →",
+        "supporting": "The Decision Engine for Meaninful Experiences.",
+        "slogan": "One-Tap Wonder"
+    },
+    "uniqueness": {
+        "heading": "From Discovery to Decision",
+        "subheading": "Most platforms stop at 'what'. UTAN answers 'when, how, and why now'.",
+        "pillar1_t": "Context-Aware Discovery",
+        "pillar1_d": "Matches activities to your schedule, weather, and traffic in real-time.",
+        "pillar2_t": "Time Optimization",
+        "pillar2_d": "Finds the ideal 'conditions window' for your energy and external factors.",
+        "pillar3_t": "Personal Fit Engine",
+        "pillar3_d": "Adapts to your equipment, skill level, and unique lifestyle constraints.",
+        "pillar4_t": "Friction Removal",
+        "pillar4_d": "Prep checklists and effort-vs-reward clarity to ensure execution."
+    },
+    "trust": {
+        "local": "Local activities across Sweden",
+        "verified": "Verified experience providers",
+        "pricing": "Clear pricing & availability",
+        "designed": "Designed for everyday planning"
+    },
+    "investor": {
+        "heading": "Investor Relations",
+        "mission": "Mission: To become Sweden's leading intelligent platform for discovery and decision intelligence.",
+        "vision": "Vision: A Sweden where discovering meaningful experiences is effortless and inclusive.",
+        "summary": "UTAN is a Decision Engine that transforms activities into smart, context-aware decisions.",
+        "metrics_h": "Market Opportunity (SEK)",
+        "metrics": {
+            "tam": "TAM: 21.4B",
+            "sam": "SAM: 14.3B",
+            "som": "SOM: 214M"
+        },
+        "projections": {
+            "h": "Growth Projection (GMV)",
+            "y1": "Year 1: 12M",
+            "y2": "Year 2: 45M",
+            "y3": "Year 3: 100M",
+            "y5": "Year 5: 300M"
+        }
+    },
+    "value": {
+        "title1": "Personalized discovery",
+        "text1": "Find activities based on your interests, location, time, and real-life constraints — not endless lists.",
+        "title2": "Simple booking",
+        "text2": "See availability, compare options, and book directly — without emails, calls, or confusion.",
+        "title3": "Local and relevant",
+        "text3": "Experiences from real local providers — cultural, educational, outdoor, and social."
+    },
+    "audience": {
+        "families": {
+            "title": "Families",
+            "text": "Plan activities that actually work for different ages and energy levels."
+        },
+        "locals": {
+            "title": "Locals & New Residents",
+            "text": "Explore your city beyond the obvious — season by season."
+        },
+        "visitors": {
+            "title": "Visitors",
+            "text": "Experience Sweden through trusted local experiences."
+        },
+        "teams": {
+            "title": "Teams & Groups",
+            "text": "Easy planning for team activities, workshops, and group bookings."
+        }
+    },
+    "how": {
+        "step1": {
+            "title": "1. Tell us what matters",
+            "text": "Interests, availability, who you’re planning for."
+        },
+        "step2": {
+            "title": "2. Get relevant suggestions",
+            "text": "UTAN adapts recommendations to your context."
+        },
+        "step3": {
+            "title": "3. Book in one place",
+            "text": "Clear details, real-time availability, secure booking."
+        },
+        "step4": {
+            "title": "4. Enjoy the experience",
+            "text": "Reminders, directions, and everything you need — ready."
+        }
+    },
+    "product": {
+        "headline": "Designed for real life",
+        "bullet1": "Personalized activity feed",
+        "bullet2": "Weather-aware suggestions",
+        "bullet3": "Group & family booking",
+        "bullet4": "Saved plans & favorites",
+        "bullet5": "Multi-language support",
+        "bullet6": "Secure payments"
+    },
+    "differentiation": {
+        "headline": "UTAN is not another activity marketplace.",
+        "text": "It’s a system designed to help people use their free time better, while helping local providers reach the right audience — at the right moment.",
+        "bullet1": "Context-aware, not keyword-based",
+        "bullet2": "Built specifically for Sweden",
+        "bullet3": "Supports both people and providers",
+        "bullet4": "Designed for everyday use — not just special occasions"
+    },
+    "cta": {
+        "headline": "Be among the first to use UTAN",
+        "text": "Join the waitlist and help shape a better way to discover experiences in Sweden.",
+        "button": "Join waitlist",
+        "privacy": "No spam. We respect your privacy."
+    },
+    "footer": {
+        "copyright": "© 2026 UTAN AB. All rights reserved.",
+        "contact": "info@utan.se"
+    }
+}
