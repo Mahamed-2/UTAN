@@ -169,11 +169,16 @@
                         <h2 data-i18n="cta.headline">Be among the first to use UTAN</h2>
                         <p class="paragraph-large" data-i18n="cta.text">Join the waitlist and help shape a better way to
                             discover experiences in Sweden.</p>
-                        <form class="waitlist-form">
-                            <input type="email" placeholder="Email address" required />
+                        <form id="waitlist-form" class="waitlist-form">
+                            <input type="email" name="email" placeholder="Email address" required />
                             <button type="submit" class="btn btn-primary" data-i18n="cta.button">Join waitlist</button>
                         </form>
-                        <p class="small-text" data-i18n="cta.privacy">No spam. We respect your privacy.</p>
+                        <div id="waitlist-success" class="hidden">
+                            <div class="success-icon">✓</div>
+                            <h3 style="margin-bottom: 8px;">Success!</h3>
+                            <p>You've been added to the waitlist. We'll be in touch soon.</p>
+                        </div>
+                        <p class="small-text cta-privacy" data-i18n="cta.privacy">No spam. We respect your privacy.</p>
                     </div>
                 </div>
             </section>

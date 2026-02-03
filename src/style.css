@@ -496,6 +496,40 @@ h1 {
     color: var(--text-muted);
 }
 
+.hidden {
+    display: none !important;
+}
+
+#waitlist-success {
+    padding: 40px;
+    animation: fadeIn 0.5s ease;
+}
+
+.success-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 24px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .centered {
     text-align: center;
 }
